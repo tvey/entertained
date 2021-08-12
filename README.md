@@ -1,0 +1,1 @@
+Serialized data filtered with vanilla Ajax.
