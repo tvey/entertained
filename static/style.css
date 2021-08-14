@@ -1,0 +1,98 @@
+body {
+  min-height: 100vh;
+  min-width: 100vw;
+  background: linear-gradient(-45deg, #47173a, #2b0f58);
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+.table td {
+  padding: 0.8rem 0.4rem;
+}
+
+select,
+textarea,
+input[type="url"],
+input[type="text"],
+input[type="email"],
+input[type="search"],
+input[type="password"] {
+  transition: box-shadow 0.3s;
+}
+
+select:focus,
+select:active,
+textarea:focus,
+textarea:active,
+input[type="url"]:focus,
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="search"]:focus,
+input[type="password"]:focus,
+input[type="url"]:active,
+input[type="text"]:active,
+input[type="email"]:active,
+input[type="search"]:active,
+input[type="password"]:active {
+  box-shadow: 3px 3px 2px 2px rgba(232, 50, 131, 0.2);
+}
+
+#showAll {
+  width: 100%
+}
+
+@media (max-width: 960px) {
+  .row > div[class*="col-"] {
+    margin-bottom: 0.45rem;
+  }
+}
+
+@media (max-width: 800px) {
+  table, thead, tbody, th, td, tr { 
+    display: block; 
+  }
+
+  .table thead tr { 
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  .table tr:nth-of-type(even) { 
+    background: rgba(43, 15, 88, 0.8); 
+  }
+
+  .table tr:nth-of-type(odd) { 
+    background: rgba(61, 15, 88, 0.8); 
+  }
+  
+  .table td { 
+    border: none;
+    border-bottom: 1px solid #c5f6eb;
+    padding: 0.5rem;
+    padding-left: 40%;
+    position: relative;
+    text-align: left;
+  }
+
+  .table td:before { 
+    position: absolute;
+    width: 35%; 
+    padding-right: 10px;
+    padding-left: 10px;
+    white-space: nowrap;
+    color: #ffc107;
+    left: 6px;
+  }
+
+  td:nth-of-type(1):before { content: "Category"; }
+  td:nth-of-type(2):before { content: "Title"; }
+  td:nth-of-type(3):before { content: "Creators"; }
+  td:nth-of-type(4):before { content: "Year"; }
+  td:nth-of-type(5):before { content: "Genres"; }
+}

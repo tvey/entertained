@@ -1,0 +1,87 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="row align-items-center">
+  <div class="col-12">
+    <h1 class="text-warning">Entertained</h1>
+  </div>
+</div>
+
+<form class="row align-items-stretch mb-2">
+  <div class="col-lg-4">
+    <select class="form-select" id="categorySelect">
+      <option value="-1" selected disabled>Category</option>
+      {% for category in categories %}
+        <option value="{{ category.id }}">{{ category.name|title }}</option>
+      {% endfor %}
+    </select>
+  </div>
+  <div class="col-lg-4">
+    <select class="form-select" id="genreSelect">
+      <option value="-1" selected disabled>Genre</option>
+      {% for genre in genres %}
+        <option value="{{ genre.id }}">{{ genre.name }}</option>
+      {% endfor %}
+    </select>
+  </div>
+  <div class="col-lg-2">
+    <select class="form-select" id="yearSelect">
+      <option value="-1" selected disabled>Sort Year</option>
+      <option value="new">Newer first</option>
+      <option value="old">Older first</option>
+    </select>
+  </div>
+  <div class="col-lg-2">
+    <a href="#" class="btn btn-primary btn-block" id="showAll">Show All</a>
+  </div>
+  </div>
+</form>
+
+<form id="search" class="row">
+  <div class="col">
+     <input type="search" class="form-control" placeholder="Search titles and creators...">
+  </div>
+</form>
+
+<div class="row align-items-center">
+  <div class="col-12">
+    <table class="table mt-3" id="entertained">
+      <thead class="text-warning">
+        <tr>
+        <th>Category</th>
+        <th>Title</th>
+        <th>Creators</th>
+        <th>Year</th>
+        <th>Genres</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for item in items %}
+        <tr>
+          <td>
+            {% if item.category %}
+              {{ item.category }}
+            {% else %}
+              -
+            {% endif %}
+          </td>
+          <td>{{ item.title }}</td>
+          <td>{{ item.creators }}</td>
+          <td>{{ item.year }}</td>
+          <td>
+            {% if item.genres %}
+              {% for genre in item.genres.all %}
+                <span class="badge bg-primary">{{ genre }}</span>
+              {% endfor %}
+            {% else %}
+              -
+            {% endif %}
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+
+{% endblock %}

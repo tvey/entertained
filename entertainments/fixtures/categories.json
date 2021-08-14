@@ -1,0 +1,37 @@
+[
+    {
+        "model": "entertainments.category",
+        "pk": 1,
+        "fields": {
+            "name": "books"
+        }
+    },
+    {
+        "model": "entertainments.category",
+        "pk": 2,
+        "fields": {
+            "name": "movies"
+        }
+    },
+    {
+        "model": "entertainments.category",
+        "pk": 3,
+        "fields": {
+            "name": "music"
+        }
+    },
+    {
+        "model": "entertainments.category",
+        "pk": 4,
+        "fields": {
+            "name": "podcasts"
+        }
+    },
+    {
+        "model": "entertainments.category",
+        "pk": 5,
+        "fields": {
+            "name": "series"
+        }
+    }
+]

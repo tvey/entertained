@@ -1,0 +1,296 @@
+[
+    {
+        "model": "entertainments.genre",
+        "pk": 1,
+        "fields": {
+            "name": "adventure"
+        }
+    },
+    {
+        "model": "entertainments.genre",
+        "pk": 2,
+        "fields": {
+            "name": "ambient"
+        }
+    },
+    {
+        "model": "entertainments.genre",
+        "pk": 3,
+        "fields": {
+            "name": "animation"
+        }
+    },
+    {
+        "model": "entertainments.genre",
+        "pk": 4,
+        "fields": {
+            "name": "architecture"
+        }
+    },
+    {
+        "model": "entertainments.genre",
+        "pk": 5,
+        "fields": {
+            "name": "arts"
+        }
+    },
+    {
+        "model": "entertainments.genre",
+        "pk": 6,
+        "fields": {
+            "name": "biography"
+        }
+    },
+    {
+        "model": "entertainments.genre",
+        "pk": 7,
+        "fields": {
+            "name": "comedy"
+        }
+    },
+    {
+        "model": "entertainments.genre",
+        "pk": 8,
+        "fields": {
+            "name": "crime"
+        }
+    },
+    {
+        "model": "entertainments.genre",
+        "pk": 9,
+        "fields": {
+            "name": "design"
+        }
+    },
+    {
+        "model": "entertainments.genre",
+        "pk": 10,
+        "fields": {
+            "name": "documentary "
+        }
+    },
+    {
+        "model": "entertainments.genre",
+        "pk": 11,
+        "fields": {
+            "name": "drama"
+        }
+    },
+    {
+        "model": "entertainments.genre",
+        "pk": 12,
+        "fields": {
+            "name": "electronic"
+        }
+    },
+    {
+        "model": "entertainments.genre",
+        "pk": 13,
+        "fields": {
+            "name": "emo"
+        }
+    },
+    {
+        "model": "entertainments.genre",
+        "pk": 14,
+        "fields": {
+            "name": "experimental"
+        }
+    },
+    {
+        "model": "entertainments.genre",
+        "pk": 15,
+        "fields": {
+            "name": "fantasy"
+        }
+    },
+    {
+        "model": "entertainments.genre",
+        "pk": 16,
+        "fields": {
+            "name": "fiction"
+        }
+    },
+    {
+        "model": "entertainments.genre",
+        "pk": 17,
+        "fields": {
+            "name": "history"
+        }
+    },
+    {
+        "model": "entertainments.genre",
+        "pk": 18,
+        "fields": {
+            "name": "horror"
+        }
+    },
+    {
+        "model": "entertainments.genre",
+        "pk": 19,
+        "fields": {
+            "name": "indie"
+        }
+    },
+    {
+        "model": "entertainments.genre",
+        "pk": 20,
+        "fields": {
+            "name": "instrumental"
+        }
+    },
+    {
+        "model": "entertainments.genre",
+        "pk": 21,
+        "fields": {
+            "name": "investigative journalism"
+        }
+    },
+    {
+        "model": "entertainments.genre",
+        "pk": 22,
+        "fields": {
+            "name": "mystery"
+        }
+    },
+    {
+        "model": "entertainments.genre",
+        "pk": 23,
+        "fields": {
+            "name": "nonfiction"
+        }
+    },
+    {
+        "model": "entertainments.genre",
+        "pk": 24,
+        "fields": {
+            "name": "philosophy"
+        }
+    },
+    {
+        "model": "entertainments.genre",
+        "pk": 25,
+        "fields": {
+            "name": "politics"
+        }
+    },
+    {
+        "model": "entertainments.genre",
+        "pk": 26,
+        "fields": {
+            "name": "pop"
+        }
+    },
+    {
+        "model": "entertainments.genre",
+        "pk": 27,
+        "fields": {
+            "name": "post-hardcore"
+        }
+    },
+    {
+        "model": "entertainments.genre",
+        "pk": 28,
+        "fields": {
+            "name": "post-rock"
+        }
+    },
+    {
+        "model": "entertainments.genre",
+        "pk": 29,
+        "fields": {
+            "name": "programming"
+        }
+    },
+    {
+        "model": "entertainments.genre",
+        "pk": 30,
+        "fields": {
+            "name": "punk"
+        }
+    },
+    {
+        "model": "entertainments.genre",
+        "pk": 31,
+        "fields": {
+            "name": "rock"
+        }
+    },
+    {
+        "model": "entertainments.genre",
+        "pk": 32,
+        "fields": {
+            "name": "romance"
+        }
+    },
+    {
+        "model": "entertainments.genre",
+        "pk": 33,
+        "fields": {
+            "name": "sci-fi"
+        }
+    },
+    {
+        "model": "entertainments.genre",
+        "pk": 34,
+        "fields": {
+            "name": "science"
+        }
+    },
+    {
+        "model": "entertainments.genre",
+        "pk": 35,
+        "fields": {
+            "name": "screamo"
+        }
+    },
+    {
+        "model": "entertainments.genre",
+        "pk": 36,
+        "fields": {
+            "name": "self-help"
+        }
+    },
+    {
+        "model": "entertainments.genre",
+        "pk": 37,
+        "fields": {
+            "name": "society"
+        }
+    },
+    {
+        "model": "entertainments.genre",
+        "pk": 38,
+        "fields": {
+            "name": "spoken word"
+        }
+    },
+    {
+        "model": "entertainments.genre",
+        "pk": 39,
+        "fields": {
+            "name": "sports"
+        }
+    },
+    {
+        "model": "entertainments.genre",
+        "pk": 40,
+        "fields": {
+            "name": "technology"
+        }
+    },
+    {
+        "model": "entertainments.genre",
+        "pk": 41,
+        "fields": {
+            "name": "thriller"
+        }
+    },
+    {
+        "model": "entertainments.genre",
+        "pk": 42,
+        "fields": {
+            "name": "trap metal"
+        }
+    }
+]

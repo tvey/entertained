@@ -1,0 +1,498 @@
+[
+    {
+        "model": "entertainments.item",
+        "pk": 1,
+        "fields": {
+            "title": "21 Lessons for the 21st Century",
+            "creators": "Yuval Noah Harari",
+            "year": 2018,
+            "category": 1,
+            "genres": [
+                23,
+                17,
+                24
+            ]
+        }
+    },
+    {
+        "model": "entertainments.item",
+        "pk": 2,
+        "fields": {
+            "title": "99% Invisible",
+            "creators": "Roman Mars",
+            "year": 2010,
+            "category": 4,
+            "genres": [
+                5,
+                9,
+                4
+            ]
+        }
+    },
+    {
+        "model": "entertainments.item",
+        "pk": 3,
+        "fields": {
+            "title": "Adventure Time with Finn & Jake",
+            "creators": "Pendleton Ward",
+            "year": 2010,
+            "category": 5,
+            "genres": [
+                3,
+                1
+            ]
+        }
+    },
+    {
+        "model": "entertainments.item",
+        "pk": 4,
+        "fields": {
+            "title": "Algorithms to Live By: The Computer Science of Human Decisions",
+            "creators": "Brian Christian, Tom Griffiths",
+            "year": 2016,
+            "category": 1,
+            "genres": [
+                23,
+                34
+            ]
+        }
+    },
+    {
+        "model": "entertainments.item",
+        "pk": 5,
+        "fields": {
+            "title": "Anatomy of the Bear",
+            "creators": "Anatomy of the Bear",
+            "year": 2012,
+            "category": 3,
+            "genres": [
+                2,
+                28
+            ]
+        }
+    },
+    {
+        "model": "entertainments.item",
+        "pk": 6,
+        "fields": {
+            "title": "Behave: The Biology of Humans at Our Best and Worst",
+            "creators": "Robert M. Sapolsky",
+            "year": 2017,
+            "category": 1,
+            "genres": [
+                23,
+                34
+            ]
+        }
+    },
+    {
+        "model": "entertainments.item",
+        "pk": 7,
+        "fields": {
+            "title": "Big Picture Science",
+            "creators": "Seth Shostak, Molly Bentley",
+            "year": 2002,
+            "category": 4,
+            "genres": [
+                34
+            ]
+        }
+    },
+    {
+        "model": "entertainments.item",
+        "pk": 8,
+        "fields": {
+            "title": "Black Books",
+            "creators": " Dylan Moran, Graham Linehan",
+            "year": 2000,
+            "category": 5,
+            "genres": [
+                7
+            ]
+        }
+    },
+    {
+        "model": "entertainments.item",
+        "pk": 9,
+        "fields": {
+            "title": "Bron/Broen",
+            "creators": "Hans Rosenfeldt",
+            "year": 2011,
+            "category": 5,
+            "genres": [
+                8,
+                22,
+                41
+            ]
+        }
+    },
+    {
+        "model": "entertainments.item",
+        "pk": 10,
+        "fields": {
+            "title": "Deep Work: Rules for Focused Success in a Distracted World",
+            "creators": "Cal Newport",
+            "year": 2016,
+            "category": 1,
+            "genres": [
+                23,
+                36
+            ]
+        }
+    },
+    {
+        "model": "entertainments.item",
+        "pk": 11,
+        "fields": {
+            "title": "Fleabag",
+            "creators": "Phoebe Waller-Bridge",
+            "year": 2016,
+            "category": 5,
+            "genres": [
+                7,
+                11
+            ]
+        }
+    },
+    {
+        "model": "entertainments.item",
+        "pk": 12,
+        "fields": {
+            "title": "Flowers",
+            "creators": "Will Sharpe",
+            "year": 2016,
+            "category": 5,
+            "genres": [
+                7,
+                11
+            ]
+        }
+    },
+    {
+        "model": "entertainments.item",
+        "pk": 13,
+        "fields": {
+            "title": "Fluent Python: Clear, Concise, and Effective Programming",
+            "creators": "Luciano Ramalho",
+            "year": 2015,
+            "category": 1,
+            "genres": [
+                29
+            ]
+        }
+    },
+    {
+        "model": "entertainments.item",
+        "pk": 14,
+        "fields": {
+            "title": "Harry Potter and the Methods of Rationality",
+            "creators": "Eliezer Yudkowsky",
+            "year": 2010,
+            "category": 1,
+            "genres": [
+                16,
+                15
+            ]
+        }
+    },
+    {
+        "model": "entertainments.item",
+        "pk": 15,
+        "fields": {
+            "title": "Hidden Brain",
+            "creators": "Shankar Vedantam",
+            "year": 2015,
+            "category": 4,
+            "genres": [
+                34
+            ]
+        }
+    },
+    {
+        "model": "entertainments.item",
+        "pk": 16,
+        "fields": {
+            "title": "Hilda",
+            "creators": "Luke Pearson",
+            "year": 2018,
+            "category": 5,
+            "genres": [
+                3,
+                15,
+                1
+            ]
+        }
+    },
+    {
+        "model": "entertainments.item",
+        "pk": 17,
+        "fields": {
+            "title": "Home",
+            "creators": "Yann Arthus-Bertrand",
+            "year": 2009,
+            "category": 2,
+            "genres": [
+                10
+            ]
+        }
+    },
+    {
+        "model": "entertainments.item",
+        "pk": 18,
+        "fields": {
+            "title": "Home, Like Noplace Is There",
+            "creators": "The Hotelier",
+            "year": 2014,
+            "category": 3,
+            "genres": [
+                13
+            ]
+        }
+    },
+    {
+        "model": "entertainments.item",
+        "pk": 19,
+        "fields": {
+            "title": "Huberman Lab",
+            "creators": "Andrew Huberman",
+            "year": 2020,
+            "category": 4,
+            "genres": [
+                34
+            ]
+        }
+    },
+    {
+        "model": "entertainments.item",
+        "pk": 20,
+        "fields": {
+            "title": "Kafka",
+            "creators": "Locktender",
+            "year": 2013,
+            "category": 3,
+            "genres": [
+                35,
+                27
+            ]
+        }
+    },
+    {
+        "model": "entertainments.item",
+        "pk": 21,
+        "fields": {
+            "title": "Let Them Eat Chaos",
+            "creators": "Kate Tempest",
+            "year": 2016,
+            "category": 3,
+            "genres": [
+                38
+            ]
+        }
+    },
+    {
+        "model": "entertainments.item",
+        "pk": 22,
+        "fields": {
+            "title": "Lex Fridman Podcast",
+            "creators": "Lex Fridman",
+            "year": 2018,
+            "category": 4,
+            "genres": [
+                40,
+                34,
+                24
+            ]
+        }
+    },
+    {
+        "model": "entertainments.item",
+        "pk": 23,
+        "fields": {
+            "title": "Over the Garden Wall",
+            "creators": "Patrick McHale",
+            "year": 2014,
+            "category": 5,
+            "genres": [
+                3,
+                1
+            ]
+        }
+    },
+    {
+        "model": "entertainments.item",
+        "pk": 24,
+        "fields": {
+            "title": "Persona",
+            "creators": "Ingmar Bergman",
+            "year": 1966,
+            "category": 2,
+            "genres": [
+                11
+            ]
+        }
+    },
+    {
+        "model": "entertainments.item",
+        "pk": 25,
+        "fields": {
+            "title": "Plagues",
+            "creators": "Ghostemane",
+            "year": 2016,
+            "category": 3,
+            "genres": [
+                42
+            ]
+        }
+    },
+    {
+        "model": "entertainments.item",
+        "pk": 26,
+        "fields": {
+            "title": "Riala",
+            "creators": "Suis la lune",
+            "year": 2012,
+            "category": 3,
+            "genres": [
+                13,
+                35
+            ]
+        }
+    },
+    {
+        "model": "entertainments.item",
+        "pk": 27,
+        "fields": {
+            "title": "S-Town",
+            "creators": "Brian Reed, Julie Snyder",
+            "year": 2017,
+            "category": 4,
+            "genres": [
+                37,
+                21
+            ]
+        }
+    },
+    {
+        "model": "entertainments.item",
+        "pk": 28,
+        "fields": {
+            "title": "Snatch",
+            "creators": "Guy Ritchie",
+            "year": 2000,
+            "category": 2,
+            "genres": [
+                7,
+                8
+            ]
+        }
+    },
+    {
+        "model": "entertainments.item",
+        "pk": 29,
+        "fields": {
+            "title": "Stuff You Should Know",
+            "creators": "Josh Clark, Charles Bryant",
+            "year": 2008,
+            "category": 4,
+            "genres": [
+                37
+            ]
+        }
+    },
+    {
+        "model": "entertainments.item",
+        "pk": 30,
+        "fields": {
+            "title": "The Art of Self-Defense",
+            "creators": "Riley Stearns",
+            "year": 2019,
+            "category": 2,
+            "genres": [
+                7
+            ]
+        }
+    },
+    {
+        "model": "entertainments.item",
+        "pk": 31,
+        "fields": {
+            "title": "The Lord of the Rings: The Fellowship of the Ring",
+            "creators": "Peter Jackson",
+            "year": 2001,
+            "category": 2,
+            "genres": [
+                15,
+                1
+            ]
+        }
+    },
+    {
+        "model": "entertainments.item",
+        "pk": 32,
+        "fields": {
+            "title": "The Pragmatic Programmer: From Journeyman to Master",
+            "creators": "Andy Hunt, Dave Thomas",
+            "year": 2020,
+            "category": 1,
+            "genres": [
+                23,
+                29
+            ]
+        }
+    },
+    {
+        "model": "entertainments.item",
+        "pk": 33,
+        "fields": {
+            "title": "This Is All Yours",
+            "creators": "alt-J",
+            "year": 2014,
+            "category": 3,
+            "genres": [
+                19,
+                12
+            ]
+        }
+    },
+    {
+        "model": "entertainments.item",
+        "pk": 34,
+        "fields": {
+            "title": "Tonari no Totoro",
+            "creators": "Hayao Miyazaki",
+            "year": 1988,
+            "category": 2,
+            "genres": [
+                3,
+                15
+            ]
+        }
+    },
+    {
+        "model": "entertainments.item",
+        "pk": 35,
+        "fields": {
+            "title": "Valtari",
+            "creators": "Sigur R\u00f3s",
+            "year": 2012,
+            "category": 3,
+            "genres": [
+                2,
+                28
+            ]
+        }
+    },
+    {
+        "model": "entertainments.item",
+        "pk": 36,
+        "fields": {
+            "title": "What We Do in the Shadows",
+            "creators": "Jemaine Clement, Taika Waititi",
+            "year": 2016,
+            "category": 2,
+            "genres": [
+                7
+            ]
+        }
+    }
+]
