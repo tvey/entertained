@@ -21,14 +21,16 @@ def index(request):
 def everything(request):
     """Return serialized data for all items."""
     serializer = ItemSerializer(Item.objects.all(), many=True)
-    return Response(serializer.data)  # array for js
+    return Response(serializer.data)
 
 
 @api_view(['GET'])
 def filter_data(request):
     """Handle filters and search: get items from db and return serialized."""
+    items = {}
     category = request.query_params.get('category')
     genre = request.query_params.get('genre')
+    genre_name = request.query_params.get('genreName')
     year_order = request.query_params.get('year')
     search_query = request.query_params.get('q')
 
@@ -36,6 +38,10 @@ def filter_data(request):
         items = Item.objects.filter(category=category)
     if genre:
         items = Item.objects.filter(genres__in=[genre]).distinct()
+    if genre_name:
+        genre_obj = Genre.objects.filter(name=genre_name).first()
+        print(genre_obj)
+        items = Item.objects.filter(genres__in=[genre_obj]).distinct()
     if year_order == 'old':
         items = Item.objects.order_by('year')
     elif year_order == 'new':
@@ -46,9 +52,5 @@ def filter_data(request):
             Q(title__icontains=search_query)
             | Q(creators__icontains=search_query)
         )
-
-    if items:
-        serializer = ItemSerializer(items, many=True)
-        return Response(serializer.data)
-
-    return Response({})
+    serializer = ItemSerializer(items, many=True)
+    return Response(serializer.data)

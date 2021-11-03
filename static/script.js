@@ -2,7 +2,8 @@ const categorySelect = document.getElementById('categorySelect');
 const genreSelect = document.getElementById('genreSelect');
 const yearSelect = document.getElementById('yearSelect');
 const searchForm = document.getElementById('search');
-const showAllBtn = document.getElementById('showAll');
+const showAllBtn = document.getElementById('show-all');
+let genreElems = document.querySelectorAll('.genre');
 
 loadEventListeners();
 
@@ -35,11 +36,6 @@ function loadEventListeners() {
     searchForm.reset();
   });
 
-  showAllBtn.addEventListener('click', (event) => {
-    fetchAPIData('everything');
-    event.preventDefault();
-  });
-
   searchForm.addEventListener('keyup', (event) => {
     const userInput = event.target.value;
     if (userInput) {
@@ -53,6 +49,23 @@ function loadEventListeners() {
     yearSelect.value = '-1';
     event.preventDefault();
   });
+
+  genreElems.forEach(genreElem => {
+    genreElem.addEventListener('click', () => {
+      let genreName = genreElem.innerText;
+      let param = `genreName=${genreName}`;
+      fetchAPIData('f', param);
+      categorySelect.value = '-1';
+      yearSelect.value = '-1';
+      searchForm.reset();
+    })
+  })
+
+  showAllBtn.addEventListener('click', (event) => {
+    fetchAPIData('everything');
+    event.preventDefault();
+  });
+
 }
 
 async function fetchAPIData(route, param = null) {
@@ -62,10 +75,14 @@ async function fetchAPIData(route, param = null) {
     url = `${url}?${param}`
   }
 
-  const response = await fetch(url);
-  const data = await response.json();
-
-  fillTable(data);
+  fetch(url)
+    .then((response) => {
+      return response.json();
+    })
+    .then((data) => {
+      fillTable(data);
+    })
+    .catch(err => console.log(err));
 }
 
 
@@ -86,7 +103,8 @@ function fillTable(data) {
     data.forEach(item => {
       let genres = '';
       item.genres.forEach(genre => {
-        genres += `<span class="badge bg-primary">${genre}</span> `
+        genres += `<span class="badge bg-primary">${genre}</span>\n`
+
       });
 
       let row = `

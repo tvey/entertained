@@ -2,17 +2,25 @@ from django.db import models
 
 
 class Category(models.Model):
-    name = models.CharField(max_length=50)
+    name = models.CharField(max_length=50, unique=True)
 
     def __str__(self):
         return self.name
+
+    class Meta:
+        verbose_name = 'Category'
+        verbose_name_plural = 'Categories'
+        ordering = ['name']
 
 
 class Genre(models.Model):
-    name = models.CharField(max_length=50)
+    name = models.CharField(max_length=50, unique=True)
 
     def __str__(self):
         return self.name
+
+    class Meta:
+        ordering = ['name']
 
 
 class Item(models.Model):
@@ -29,3 +37,6 @@ class Item(models.Model):
 
     def __str__(self):
         return self.title
+
+    class Meta:
+        ordering = ['title']

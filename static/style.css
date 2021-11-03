@@ -1,7 +1,7 @@
 body {
   min-height: 100vh;
   min-width: 100vw;
-  background: linear-gradient(-45deg, #47173a, #2b0f58);
+  background: linear-gradient(45deg, #47173a, #2b0f58);
   font-family: 'Roboto Condensed', sans-serif;
   color: #fff;
   font-size: 1.2rem;
@@ -42,8 +42,17 @@ input[type="password"]:active {
   box-shadow: 3px 3px 2px 2px rgba(232, 50, 131, 0.2);
 }
 
-#showAll {
+#show-all {
   width: 100%
+}
+
+.genre {
+  cursor: pointer;
+}
+
+.genre:hover, 
+.genre:focus {
+  opacity: 0.9;
 }
 
 @media (max-width: 960px) {

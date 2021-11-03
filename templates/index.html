@@ -32,7 +32,7 @@
     </select>
   </div>
   <div class="col-lg-2">
-    <a href="#" class="btn btn-primary btn-block" id="showAll">Show All</a>
+    <button id="show-all" class="btn btn-primary d-block">Show All</button>
   </div>
   </div>
 </form>
@@ -71,7 +71,7 @@
           <td>
             {% if item.genres %}
               {% for genre in item.genres.all %}
-                <span class="badge bg-primary">{{ genre }}</span>
+                <span class="genre badge bg-primary">{{ genre }}</span>
               {% endfor %}
             {% else %}
               -
