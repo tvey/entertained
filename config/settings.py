@@ -107,9 +107,22 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 if not DEBUG:
     STATIC_URL = '/static/'
+
     STATIC_ROOT = BASE_DIR / 'staticfiles'
 
-    MIDDLEWARE.insert(0, 'django.middleware.security.SecurityMiddleware')
     MIDDLEWARE.insert(1, 'whitenoise.middleware.WhiteNoiseMiddleware')
 
-    STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
+    STORAGES = {
+        "staticfiles": {
+            "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
+        },
+    }
+
+    CSRF_TRUSTED_ORIGINS = env('CSRF_TRUSTED_ORIGINS').split()
+
+    CSRF_COOKIE_DOMAIN = env('CSRF_COOKIE_DOMAIN')
+
+    CSRF_COOKIE_SECURE = True
+
+    SESSION_COOKIE_SECURE = True
+

@@ -1,4 +1,4 @@
-FROM python:3.11-alpine
+FROM python:3.11-slim
 
 WORKDIR /app
 
@@ -7,12 +7,12 @@ ENV PYTHONUNBUFFERED 1
 
 RUN pip install --upgrade pip
 RUN pip install --no-cache-dir pipenv
-COPY Pipfile* /app/
+COPY Pipfile* ./
 RUN pipenv requirements > requirements.txt
 RUN pip install --no-cache-dir --upgrade -r requirements.txt
 
-COPY . .
+COPY . ./
 
-EXPOSE 8000
+EXPOSE 80
 
-ENTRYPOINT ["/app/entrypoint.sh"]
+CMD ["python", "manage.py", "runserver", "0.0.0.0:80"]
